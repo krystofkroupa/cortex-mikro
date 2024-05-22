@@ -1,0 +1,104 @@
+.slider {
+  background-color: #FFB84C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 21;
+  transform: translateY(100%);
+}
+
+.intro {
+  background-color: #FFB84C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Avenir Next", sans-serif;
+  letter-spacing: 1.5px;
+  color: #FFFBEB;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.slider {
+  background-color: #FFFBEB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 21;
+  transform: translateY(100%);
+}
+
+.loading-screen {
+  height: 100%;
+  width: 0%;
+  padding: 0;
+  position: relative;
+  background-color: #FFB84C;
+}
+
+.slider {
+  background-color: #FFFBEB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 21;
+  transform: translateY(100%);
+}
+
+.intro-text h1 {
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 1.7em;
+}
+
+.logo-background {
+  position: absolute;
+  bottom: -5px;
+  right: 50px;
+  z-index: 8;
+}
+
+.logo-background img {
+  height: 600px;
+  width: auto;
+}
+
+span img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.hide {
+  background: #FFB84C;
+  overflow: hidden;
+}
+
+.hide span {
+  display: inline-block;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=animations.css.map */

@@ -1,0 +1,164 @@
+@use "sass:meta"
+
+$primary-color: #FFB84C
+$light-color: #FFFBEB
+$primary-font: "Avenir Next", sans-serif
+
+.burgerMenu
+  z-index: 8
+  position: absolute
+  right: 0
+  height: calc(100vh - 80px)
+  width: 100vw
+  background-color: $light-color
+  transform: translateX(100%)
+  display: none
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  top: 80px
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+  text-align: center
+
+@media screen and (max-width: 650px)
+  .burgerMenu
+    width: 100vw
+
+.burger
+  position: relative
+  z-index: 15
+  display: none
+  cursor: pointer
+
+.burger div
+  position: relative
+  z-index: 15
+  width: 25px
+  height: 3px
+  margin: 5px
+  border-radius: 8px
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+
+@media screen and (max-width: 924px)
+  .navLinks ul
+    display: none
+
+  .burger
+    display: block
+
+  .burgerMenu
+    display: flex
+
+.burgerFoldMenu
+  position: absolute
+  left: -26.775px
+  top: -20.5px
+  background-color: $primary-color
+  border: rgb(255, 251, 235, 0.5) 1px solid
+  border-radius: 8px
+  padding: 2px
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+  width: 184px
+
+.burgerFoldPivo
+  position: absolute
+  left: -26.775px
+  top: -20.5px
+  background-color: $primary-color
+  border: rgb(255, 251, 235, 0.5) 1px solid
+  border-radius: 8px
+  padding: 2px
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+  width: 184px
+
+.nav-active
+  transform: translateX(0%)
+
+.nav-unscrolled
+  .burger
+    div
+      background: $primary-color
+
+.nav-scrolled
+  .burger
+    div
+      background-color: $light-color
+
+.burgerMenu
+  ul
+    display: flex
+    flex-direction: column
+
+.burgerMenu
+  ul
+    li
+      margin: 30px
+
+.burgerMenu
+  ul
+    li
+      a
+        font-size: 1.5rem
+
+.toggle
+  .line1
+    transform: rotate(-45deg) translate(-5px, 6px)
+
+
+.toggle
+  .line2
+    transform: translateX(-10px)
+    opacity: 0
+
+.foldmenu-container
+  ul
+    li
+      z-index: 20
+      margin: 0
+
+.foldpivo-container
+  ul
+    li
+      margin: 0
+      z-index: 20
+      font-size: 1.3em
+
+.burgerFoldMenu
+  ul
+    li
+      a
+        font-size: 1.3em
+
+
+.toggle
+  .line3
+    transform: rotate(45deg) translate(-5px, -6px)
+
+.navLinksH
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+
+
+.navLinksH
+  li
+    opacity: 0
+    transform: translateX(30px)
+
+@keyframes navLinkFade
+  from
+    opacity: 0
+    transform: translateX(30px)
+  to
+    opacity: 1
+    transform: translateX(0px)
+
+
+@keyframes navLinkFadeOut
+  from
+    opacity: 1
+    transform: translateX(0px)
+  to
+    opacity: 0
+    transform: translateX(30px)
+
+
+

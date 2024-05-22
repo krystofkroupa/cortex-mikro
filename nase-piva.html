@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Malešický mikropivovar</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+</head>
+<body data-barba="wrapper">
+<div class="load-container">
+    <div class="loading-screen">
+    </div>
+</div>
+<nav class="navbar nav-unscrolled">
+    <div class="logo navLogoUnscrolled">
+        <a href="index.html">
+            <img class="logoOrange" src="src/img/logoOrange.png" alt="logo">
+            <img class="logoBeige" src="src/img/logoBeige.png" alt="logo">
+        </a>
+    </div>
+    <div class="navLinks">
+        <ul class="navUl">
+            <li class="nav-menu margin liMenu">
+                <a class="underline a-menu">
+                    Menu
+
+                    <div class="fold-out-menu fold-out-menu-hidden">
+                        <ul>
+                            <li><a class="underline" href="poledni.html">Polední menu</a></li>
+                            <li><a class="underline" href="">Jídelní lístek</a></li>
+                        </ul>
+                    </div>
+
+                </a>
+            </li>
+            <li class="nav-pivo margin">
+                <a class="underline a-pivo">
+                    Pivo
+
+                    <div class="fold-out-pivo fold-out-pivo-hidden">
+                        <ul>
+                            <li><a class="underline" href="">Pivní menu</a></li>
+                            <li><a class="underline" href="">Naše piva</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="margin">
+                <a class="underline" href="">Kontakt</a>
+            </li>
+            <li class="margin">
+                <a class="underline" href="">Rezervace</a>
+            </li>
+        </ul>
+    </div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="burgerMenu">
+        <ul class="navLinksH">
+            <li>
+                <a class="burgerAmenu burgerAmenu-visible">
+                    Menu
+
+                    <div class="foldmenu-container">
+                        <ul class="burgerFoldMenu foldMenu-hidden">
+                            <li><a href="poledni.html">Polední</a></li>
+                            <li><a href="">Jídelní lístek</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li style="z-index: 30">
+                <a class="burgerApivo burgerApivo-visible">
+                    Pivo
+
+                    <div class="foldpivo-container">
+                        <ul class="burgerFoldPivo foldPivo-hidden">
+                            <li><a href="">Pivní menu</a></li>
+                            <li><a href="">Naše piva</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="" href="">
+                    Kontakt
+                    <div class="foldpivo-container">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="" href="">
+                    Rezervace
+                    <div class="foldpivo-container">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main data-barba="container" data-barba-namespace="foto-section">
+    <div class="animate-this">
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="dist/js/bundle.js"></script>
+</body>
+</html>
